@@ -1,0 +1,15 @@
+Issues:
+
+PostSidesTests:
+1) lineTriangleTest  - it should not be triangle, so tests should not give Status code =200;
+Should be message: "Invalid triangle or something like this"
+
+2) negativeSideTriangleTest - it should not be triangle, so tests should not give Status code =200;
+Should be message: "Invalid side# or something like this"
+
+
+PostSeparatorTests:
+1) noSeparatorTest - expected that "non-existent separator" cannot be used, so expected code 422 or other error instead of 200.
+
+2) forbidenSymbolSeparatorTest - excpected that * can be used as separtor, so expected code 200, but get 500 and 422 (if used \")
+
